@@ -1,0 +1,7 @@
+title: Bento Studio
+description: "Réalisé avec Nuxt 3, Nuxt UI, Tiptap et Unovis. Il s'agit d'un projet permettant de montrer mes capacités dans l'utilisation de VueJS et plus globalement en Front-end."
+image: ""
+url: "https://bento-studio.vercel.app"
+github: "https://github.com/alexisdechiara/bento"
+tags: ["Nuxt", "Tailwind"]
+date: "2024"

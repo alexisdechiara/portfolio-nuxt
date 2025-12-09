@@ -1,0 +1,8 @@
+title: GEEKLY
+description: "Projet réalisé en fusionnant deux thèmes existants, le site utilise le CMS Ghost et est hébergé sur un serveur OVH"
+image: ""
+url: "https://geekly.blog"
+github: "https://github.com/alexisdechiara/attibling"
+tags: ["Ghost", "Handlebars"]
+date: "2024"
+featured: true

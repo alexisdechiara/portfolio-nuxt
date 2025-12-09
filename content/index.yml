@@ -1,32 +1,168 @@
 seo:
-  title: "Emma Thompson - UX/UI Designer"
-  description: "Welcome to my portfolio! I'm Emma Thompson, a UX/UI designer and front-end developer based in Boston. I specialize in creating user-centered digital experiences that are both beautiful and functional."
-title: "Hey, I'm Emma Thompson UX/UI Designer"
-description: "I craft intuitive digital experiences where design meets functionality. Based in Boston, bringing ideas to life through code and creativity."
+  title: "Alexis De Chiara"
+  description: "Développeur front-end & UX/UI Designer"
+title: "Alexis De Chiara"
+description: "Je suis front-end developer & UX/UI Designer, spécialisé dans la création d'applications web en utilisant des technologies modernes et performantes mais aussi dans la création de maquettes responsive et accessibles"
 hero:
   links:
-    - label: "Use this template"
-      to: https://github.com/nuxt-ui-templates/portfolio
+    - label: "Me contacter"
+      to: mailto:pro@alexisdechiara.fr
       color: "neutral"
-  images:
-    - src: /hero/random-1.avif
-      alt: Random Image 1
-    - src: /hero/random-2.avif
-      alt: Random Image 2
-    - src: /hero/random-3.avif
-      alt: Random Image 3
-    - src: /hero/random-4.avif
-      alt: Random Image 4
-    - src: /hero/random-5.avif
-      alt: Random Image 5
-    - src: /hero/random-6.avif
-      alt: Random Image 6
-    - src: /hero/random-7.avif
-      alt: Random Image 7
-    - src: /hero/random-8.avif
-      alt: Random Image 8
-    - src: /hero/random-9.avif
-      alt: Random Image 9
+    - label: "Prendre rendez-vous"
+      to: https://calendly.com/alexisdechiara/rendez-vous
+      variant: "ghost"
+      color: "neutral"
+marquees:
+  - stacks:
+      - title: Nuxt
+        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        icon: i-simple-icons-nuxt
+        color: "#00DC82"
+      - title: Vue
+        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        icon: i-simple-icons-vuedotjs
+        color: "#42B883"
+      - title: Astro
+        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        icon: i-logos-astro-icon
+        color: "#BC52EE"
+      - title: Tailwind CSS
+        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        icon: i-simple-icons-tailwindcss
+        color: "#06B6D4"
+  - stacks:
+      - title: Laravel
+        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        icon: i-simple-icons-laravel
+        color: "#FF6363"
+      - title: Symfony
+        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        icon: i-simple-icons-symfony
+        color: "#000000"
+      - title: Supabase
+        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        icon: i-simple-icons-supabase
+        color: "#3FCF8E"
+      - title: SQL
+        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        icon: i-devicon-postgresql
+        color: "#4169E1"
+      - title: Java
+        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        icon: i-ri-java-fill
+        color: "#FF6363"
+  - stacks:
+      - title: Figma
+        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        icon: i-devicon-figma
+        color: "#000000"
+      - title: Photoshop
+        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        icon: i-devicon-photoshop
+        color: "#000000"
+      - title: DaVinci Resolve
+        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        icon: i-simple-icons-davinciresolve
+experiences:
+  title: Mes expériences
+  description: "L'ensemble de mes expériences professionnelles"
+  items:
+    - tag: "Freelance"
+      date: "2024-011-01"
+      title: "Développeur Front-end"
+      description: "Mission réalisée pour un client et ayant durée sur plusieurs mois. Toute la partie front-end à entièrement était fait par moi avec en premier lieu une maquette puis le développement avec Nuxt ainsi que les bibliothèques Reka UI et Tailwind CSS."
+      stacks:
+        - name: "Nuxt"
+          icon: "i-simple-icons-nuxt"
+          color: "#00DC82"
+        - name: "Reka UI"
+          icon: "i-simple-icons-rekaui"
+          color: "#42B883"
+        - name: "Tailwind CSS"
+          icon: "i-simple-icons-tailwindcss"
+          color: "#06B6D4"
+      links:
+        - label: Copy Trading
+          to: "https://copy.trading/"
+    - tag: "Alternance"
+      date: "2022-08-01"
+      title: "Développeur Fullstack"
+      description: "Alternance avec l'entreprise Orange Business Services dans laquelle j'ai refactoré et d'amélioré l'interface d'un site interne dédié à la gestion de la facturation des clients. Par la suite, j'ai entrepris la création de certains microservices visant à rendre le backend plus flexible."
+      stacks:
+        - name: "Vue"
+          icon: "i-simple-icons-vuedotjs"
+          color: "#42B883"
+        - name: "Bootstrap"
+          icon: "i-simple-icons-bootstrap"
+          color: "#7952B3"
+        - name: "C#"
+          icon: "i-simple-icons-csharp"
+          color: "#612678"
+        - name: ".NET"
+          icon: "i-simple-icons-dotnet"
+          color: "#512BD4"
+      links:
+        - label: Orange Business Services
+          to: "https://orange.com"
+    - tag: "Études"
+      date: "2022-08-01"
+      title: "Licence pro APIDAE"
+      description: "Cours visant à approfondir mes études en informatique, avec une orientation spécifique vers le domaine du web. Ce programme mettait l'accent sur la base de données, la conception d'architecture web, ainsi que l'utilisation de frameworks JavaScript et PHP. Mon objectif était de décrocher le diplôme d'Assistant de Projet Informatique, Développement d'Applications E-business."
+      stacks:
+        - name: "Vue"
+          icon: "i-simple-icons-vuedotjs"
+          color: "#42B883"
+        - name: "PHP"
+          icon: "i-simple-icons-php"
+          color: "#7952B3"
+        - name: "JavaScript"
+          icon: "i-simple-icons-javascript"
+          color: "#edd93a"
+        - name: "SQL"
+          icon: "i-simple-icons-postgresql"
+          color: "#4169E1"
+        - name: "Symfony"
+          icon: "i-simple-icons-symfony"
+          color: "#000000"
+      links:
+        - label: IUT Montpellier-Sète
+          to: "https://iut-montpellier-sete.edu.umontpellier.fr/"
+        - label: Formation
+          to: "https://iut-montpellier-sete.edu.umontpellier.fr/files/2020/01/Fiche-de-formation-LP-APIDAE_R_V_2020.pdf"
+    - tag: "Stage"
+      date: "2021-08-01"
+      title: "Développeur Fullstack"
+      description: "Utilisations de spring avec Java et angular sur une application de gestion des clients sensibles en interne"
+      stacks:
+        - name: "Java"
+          icon: "i-ri-java-fill"
+          color: "#FF6363"
+        - name: "Angular"
+          icon: "i-simple-icons-angular"
+          color: "#FF6363"
+      links:
+        - label: UBS
+          to: "https://ubs.com"
+    - tag: "Études"
+      date: "2019-09-01"
+      title: "DUT Informatique"
+      description: "Formation initiale permettant d'acquérir des compétences dans un ensemble diversifié de langages de programmation, tout en apprenant les bonnes pratiques et les concepts logiques fondamentaux."
+      stacks:
+        - name: "Java"
+          icon: "i-ri-java-fill"
+          color: "#FF6363"
+        - name: "SQL"
+          icon: "i-simple-icons-postgresql"
+          color: "#4169E1"
+        - name: "JavaScript"
+          icon: "i-simple-icons-javascript"
+          color: "#edd93a"
+        - name: "Angular"
+          icon: "i-simple-icons-angular"
+          color: "#FF6363"
+      links:
+        - label: "IUT Nice Côte D’azur"
+          to: "https://iutcotedazur.unice.fr/"
 about:
   title: "About Me"
   description: |
@@ -78,9 +214,9 @@ testimonials:
       avatar:
         src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-blog:
-  title: "Latest Articles"
-  description: "Some of my recent thoughts"
+projects:
+  title: "Projets réalisés"
+  description: "Voici quelques un de mes projets mis en avant"
 faq:
   title: Frequently Asked Questions
   description: Answers to common questions about my process and services.

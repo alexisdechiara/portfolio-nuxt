@@ -1,0 +1,7 @@
+title: AniTierList
+description: "Projet personnel réalisé après ma licence pro en utilisant l'API de AniList, un site de notation d'anime. Le principe de ce projet est de permettre de réaliser des tierlist d'anime en chargeant comme données les informations présent sur le compte de l'utilisateur. L'interface est totalement copié de Anilist pour être en accord."
+image: ""
+url: "https://anitierlist.netlify.app/"
+github: "https://github.com/alexisdechiara/AniTierList"
+tags: ["Nuxt", "Tailwind"]
+date: "2024"

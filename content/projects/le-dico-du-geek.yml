@@ -1,0 +1,7 @@
+title: Le dico du geek
+description: "Regroupant une partie front-end avec Astro et back-end avec Directus hébergé sur mon serveur Hostinger, ce site permet de se renseigner sur les mots de la culture geek, internet et plus encore."
+image: ""
+url: "https://ledicodugeek.vercel.app/"
+github: "https://github.com/alexisdechiara/dico-du-geek"
+tags: ["Astro", "Tailwind", "Directus"]
+date: "2024"
