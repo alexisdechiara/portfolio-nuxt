@@ -1,8 +1,8 @@
 title: Knowless
 description: "Site de quiz similaire à KCulture et utilisant les questions provenant de OpenQuizzDB. J'ai réalisé ce projet entièrement sous Nuxt avec shadcn-vue pour la partie UI."
-image: ""
+image: "/img/knowless.webp"
 url: "https://knowless.vercel.app"
 github: "https://github.com/alexisdechiara/knowless"
 tags: ["Nuxt", "Shadcn"]
-date: "2024"
+date: "2025"
 featured: true

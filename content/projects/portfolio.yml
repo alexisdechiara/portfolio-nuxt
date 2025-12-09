@@ -1,6 +1,6 @@
 title: Portfolio
 description: "Deuxième version de mon portfolio, cette fois réalisé avec Astro, Tailwind et Storyblok. Il présente mes diplômes ainsi que mes projets et un moyen de me contacter."
-image: ""
+image: "/img/portfolio.avif"
 url: "https://github.com/alexisdechiara/portfolio"
 github: "https://github.com/alexisdechiara/portfolio"
 tags: ["Astro", "Tailwind", "Storyblok"]

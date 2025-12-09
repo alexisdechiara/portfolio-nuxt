@@ -1,6 +1,6 @@
 title: Roll20Alternative
 description: "Projet réalisé en équipe de six durant la 2ᵉ année de DUT Informatique. J'étais chef de projet, responsable UI/UX et coresponsable du front-end"
-image: ""
+image: "/img/roll20alternative.webp"
 url: "https://github.com/alexisdechiara/Roll20Alternative"
 github: "https://github.com/alexisdechiara/Roll20Alternative"
 tags: ["Laravel", "Bootstrap"]

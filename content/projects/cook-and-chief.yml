@@ -1,6 +1,6 @@
 title: Cook&Chief
 description: "Projet réalisé en licence pro APIDAE avec l'aide d'un designer pour les images. Il s'agit d'un site qui présente des recettes de cuisines avec une interface agréable."
-image: ""
+image: "/img/cookandchief.webp"
 url: "https://github.com/alexisdechiara/cookandchief"
 github: "https://github.com/alexisdechiara/cookandchief"
 tags: ["Vue", "Tailwind"]

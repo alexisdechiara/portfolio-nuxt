@@ -1,50 +1,46 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from "@nuxt/content";
-
 defineProps<{
-  page: IndexCollectionItem;
+  projects: Array<any>;
+  even?: boolean;
 }>();
-
-const { data: projects } = await useAsyncData("projects", () => {
-  return queryCollection("projects").where("featured", "=", true).all();
-});
 </script>
 
 <template>
-  <UPageSection
-    v-if="page.projects && projects?.length"
-    :title="page.projects.title"
-    :description="page.projects.description"
-    :ui="{
-      container: 'px-0 !pt-0 sm:gap-6 lg:gap-8',
-      title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
-      description: 'text-left mt-2 text-sm sm:text-md lg:text-sm text-muted',
-    }"
-  >
+  <div class="flex flex-col">
     <Motion
       v-for="(project, index) in projects"
       :key="project.title"
       :initial="{ opacity: 0, transform: 'translateY(10px)' }"
       :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
-      :transition="{ delay: 0.2 * index }"
+      :transition="{ delay: 0.1 * index }"
       :in-view-options="{ once: true }"
     >
       <UPageCard
-        :title="project.title"
+        v-if="even ? index % 2 === 0 : index % 2 === 1"
         :description="project.description"
         :to="project.url"
-        orientation="horizontal"
-        variant="naked"
-        :reverse="index % 2 === 1"
+        reverse
+        orientation="vertical"
+        variant="ghost"
         class="group"
         :ui="{
           wrapper: 'max-sm:order-last',
+          title: 'flex items-center justify-between',
         }"
       >
-        <template #leading>
-          <span class="text-sm text-muted">
-            {{ new Date(project.date).getFullYear() }}
-          </span>
+        <template #title>
+          {{ project.title }}
+          <div class="inline-flex gap-1">
+            <UBadge
+              v-for="tag in project.tags"
+              :key="tag"
+              :label="tag"
+              color="neutral"
+              variant="soft"
+              size="sm"
+              class="rounded-full"
+            />
+          </div>
         </template>
         <template #footer>
           <div class="inline-flex gap-1 items-center">
@@ -80,5 +76,5 @@ const { data: projects } = await useAsyncData("projects", () => {
         />
       </UPageCard>
     </Motion>
-  </UPageSection>
+  </div>
 </template>
