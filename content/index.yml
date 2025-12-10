@@ -2,7 +2,7 @@ seo:
   title: "Alexis De Chiara"
   description: "Développeur front-end & UX/UI Designer"
 title: "Alexis De Chiara"
-description: "Je suis front-end developer & UX/UI Designer, spécialisé dans la création d'applications web en utilisant des technologies modernes et performantes mais aussi dans la création de maquettes responsive et accessibles"
+description: "Je suis **front-end developer** & **UX/UI Designer**, spécialisé dans la création d'applications web en utilisant des technologies modernes et performantes mais aussi dans la création de maquettes responsive et accessibles"
 hero:
   links:
     - label: "Me contacter"
@@ -15,54 +15,62 @@ hero:
 marquees:
   - stacks:
       - title: Nuxt
-        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        description: "Meta-framework de Vue.js pour des applications web performantes et SEO-friendly"
         icon: i-simple-icons-nuxt
         color: "#00DC82"
       - title: Vue
-        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        description: "Framework JavaScript progressif pour construire des interfaces utilisateur"
         icon: i-simple-icons-vuedotjs
         color: "#42B883"
       - title: Astro
-        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        description: "Framework web moderne permettant d'utiliser plusieurs frameworks"
         icon: i-logos-astro-icon
         color: "#BC52EE"
+      - title: Typescript
+        description: "Langage de programmation fortement typé s'appuyant sur JavaScript"
+        icon: i-simple-icons-typescript
+        color: "#3178C6"
       - title: Tailwind CSS
-        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        description: "Framework CSS utilitaire pour des designs personnalisés et réactifs"
         icon: i-simple-icons-tailwindcss
         color: "#06B6D4"
   - stacks:
       - title: Laravel
-        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        description: "Framework PHP élégant pour le développement d'applications web complètes"
         icon: i-simple-icons-laravel
         color: "#FF6363"
       - title: Symfony
-        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        description: "Framework PHP robuste pour des applications web complexes et évolutives"
         icon: i-simple-icons-symfony
         color: "#000000"
       - title: Supabase
-        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        description: "Alternative open source à Firebase avec base de données temps réel et authentification"
         icon: i-simple-icons-supabase
         color: "#3FCF8E"
       - title: SQL
-        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        description: "Langage de requête pour gérer et interroger des bases de données relationnelles"
         icon: i-devicon-postgresql
         color: "#4169E1"
       - title: Java
-        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        description: "Langage de programmation orienté objet pour des applications d'entreprise"
         icon: i-ri-java-fill
         color: "#FF6363"
   - stacks:
       - title: Figma
-        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        description: "Outil de conception d'interface et prototypage collaboratif en ligne"
         icon: i-devicon-figma
         color: "#000000"
+      - title: DaVinci Resolve
+        description: "Solution complète de montage vidéo et d'étalonnage couleur professionnel"
+        icon: i-simple-icons-davinciresolve
+      - title: Affinity
+        description: "Logiciel de retouche et de création graphique gratuite et tout-en-un"
+        icon: i-local-affinity
+        color: "#000000"
       - title: Photoshop
-        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
+        description: "Logiciel de retouche et de création graphique professionnelle"
         icon: i-devicon-photoshop
         color: "#000000"
-      - title: DaVinci Resolve
-        description: "Mon framework préféré, dès que je doit faire un projet, je le choisis"
-        icon: i-simple-icons-davinciresolve
 experiences:
   title: Mes expériences
   description: "L'ensemble de mes expériences professionnelles"

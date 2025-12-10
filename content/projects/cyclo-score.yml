@@ -1,0 +1,8 @@
+title: Cyclo-Score
+description: "Site web permettant de réalisé une évaluation du score d'un aménagement cyclable, réalisé en suivant la métohdologie du YouTubeur AltisPlay et en utilisant Nuxt et un tempalte de Nuxt UI"
+image: "/img/cyclo-score.avif"
+url: "https://cyclo-score.vercel.app"
+github: "https://github.com/alexisdechiara/cyclo-score"
+tags: ["Nuxt", "Nuxt UI"]
+date: "2025"
+featured: true

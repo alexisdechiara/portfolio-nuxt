@@ -6,7 +6,10 @@ defineProps<{
 }>();
 
 const { data: projects } = await useAsyncData("projects", () => {
-  return queryCollection("projects").where("featured", "=", true).all();
+  return queryCollection("projects")
+    .where("featured", "=", true)
+    .order("date", "DESC")
+    .all();
 });
 </script>
 

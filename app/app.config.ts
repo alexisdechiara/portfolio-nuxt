@@ -1,13 +1,12 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: 'https://alexisdechiara.fr/_astro/profil_1E6UYv.webp',
-      light: 'https://alexisdechiara.fr/_astro/profil_1E6UYv.webp',
-      alt: 'My profile picture'
+      dark: 'https://github.com/alexisdechiara/portfolio-nuxt/raw/refs/heads/main/public/img/profil.avif',
+      light: 'https://github.com/alexisdechiara/portfolio-nuxt/raw/refs/heads/main/public/img/profil.avif',
+      alt: 'Ma photo de profil'
     },
-    meetingLink: 'https://cal.com/',
-    email: 'pro@alexisdechiara.fr',
-    available: true
+    meetingLink: 'https://calendly.com/alexisdechiara/rendez-vous',
+    email: 'pro@alexisdechiara.fr'
   },
   ui: {
     colors: {
@@ -23,7 +22,7 @@ export default defineAppConfig({
     }
   },
   footer: {
-    credits: `Built with Nuxt UI • © ${new Date().getFullYear()}`,
+    credits: `Réalisé avec Nuxt UI • © ${new Date().getFullYear()}`,
     colorMode: false,
     links: [{
       'icon': 'i-simple-icons-linkedin',

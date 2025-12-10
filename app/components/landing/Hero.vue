@@ -80,7 +80,7 @@ defineProps<{
           delay: 0.3,
         }"
       >
-        {{ page.description }}
+        <MDC :value="page.description" unwrap="p" />
       </Motion>
     </template>
 

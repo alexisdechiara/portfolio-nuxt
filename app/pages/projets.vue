@@ -11,7 +11,7 @@ if (!page.value) {
 }
 
 const { data: projects } = await useAsyncData("projects", () => {
-  return queryCollection("projects").all();
+  return queryCollection("projects").order("date", "DESC").all();
 });
 
 useSeoMeta({
@@ -33,7 +33,11 @@ useSeoMeta({
         description: '!mx-0 text-left',
         links: 'justify-start',
       }"
-    />
+    >
+      <template #description>
+        <MDC :value="page.description" unwrap="p" />
+      </template>
+    </UPageHero>
     <UPageSection
       :ui="{
         container: '!pt-0',

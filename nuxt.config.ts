@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
     'nuxt-og-image',
-    'motion-v/nuxt',
+    'motion-v/nuxt'
   ],
 
   devtools: {
@@ -34,5 +34,14 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  icon: {
+    customCollections: [
+      {
+        prefix: 'local',
+        dir: './app/assets/icons'
+      }
+    ]
   }
 })
