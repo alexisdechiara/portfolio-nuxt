@@ -1,7 +1,9 @@
-title: Portfolio
+title: Portfolio v2
 description: "Deuxième version de mon portfolio, cette fois réalisé avec Astro, Tailwind et Storyblok. Il présente mes diplômes ainsi que mes projets et un moyen de me contacter."
 image: "/img/portfolio.avif"
 url: "https://github.com/alexisdechiara/portfolio"
 github: "https://github.com/alexisdechiara/portfolio"
-tags: ["Astro", "Tailwind", "Storyblok"]
-date: "2024"
+stacks: ["Astro", "Tailwind", "Storyblok"]
+tags: ["Site vitrine"]
+type: project
+date: "2023"

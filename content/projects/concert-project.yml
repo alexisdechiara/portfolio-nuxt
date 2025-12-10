@@ -1,7 +1,9 @@
 title: ConcertProject
 description: "Projet réalisé seul en cours en licence pro APIDAE et m'ayant nécessité 35h de travail. Une base de donnée ainsi qu'un concept préalable a été nécessité."
-image: "/img/lesvictoiresdelamusique.webp"
+image: "/img/concert-project.avif"
 url: "https://github.com/alexisdechiara/ConcertProject"
 github: "https://github.com/alexisdechiara/ConcertProject"
-tags: ["Symfony", "Twig", "Tailwind"]
-date: "2024"
+stacks: ["Symfony", "Twig", "Tailwind"]
+tags: ["Réservation"]
+type: demo
+date: "2022"

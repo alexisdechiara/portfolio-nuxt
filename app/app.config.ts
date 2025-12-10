@@ -13,6 +13,9 @@ export default defineAppConfig({
       primary: 'indigo',
       neutral: 'neutral'
     },
+    container: {
+      base: 'max-w-4xl 2xl:max-w-6xl'
+    },
     pageHero: {
       slots: {
         container: 'py-18 sm:py-24 lg:py-32',

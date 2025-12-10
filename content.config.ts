@@ -20,20 +20,6 @@ const createImageSchema = () => z.object({
   alt: z.string()
 })
 
-const createAuthorSchema = () => z.object({
-  name: z.string(),
-  description: z.string().optional(),
-  username: z.string().optional(),
-  twitter: z.string().optional(),
-  to: z.string().optional(),
-  avatar: createImageSchema().optional()
-})
-
-const createTestimonialSchema = () => z.object({
-  quote: z.string(),
-  author: createAuthorSchema()
-})
-
 export default defineContentConfig({
   collections: {
     index: defineCollection({
@@ -65,7 +51,6 @@ export default defineContentConfig({
             })
           }))
         }),
-        testimonials: z.array(createTestimonialSchema()),
         blog: createBaseSchema(),
         projects: createBaseSchema(),
         experiences: createBaseSchema().extend({
@@ -81,18 +66,6 @@ export default defineContentConfig({
             })),
             links: z.array(createButtonSchema()).optional()
           }))
-        }),
-        faq: createBaseSchema().extend({
-          categories: z.array(
-            z.object({
-              title: z.string().nonempty(),
-              questions: z.array(
-                z.object({
-                  label: z.string().nonempty(),
-                  content: z.string().nonempty()
-                })
-              )
-            }))
         })
       })
     }),
@@ -105,9 +78,12 @@ export default defineContentConfig({
         image: z.string().nonempty().editor({ input: 'media' }),
         github: z.string().nonempty().optional(),
         url: z.string().nonempty(),
+        stacks: z.array(z.string()),
         tags: z.array(z.string()),
+        type: z.enum(['project', 'demo']).default('project'),
         date: z.date(),
-        featured: z.boolean().default(false).optional()
+        featured: z.boolean().default(false).optional(),
+        available: z.boolean().default(false).optional()
       })
     }),
     pages: defineCollection({

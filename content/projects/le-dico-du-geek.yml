@@ -3,5 +3,7 @@ description: "Regroupant une partie front-end avec Astro et back-end avec Direct
 image: "/img/ledicodugeek.webp"
 url: "https://ledicodugeek.vercel.app/"
 github: "https://github.com/alexisdechiara/dico-du-geek"
-tags: ["Astro", "Tailwind", "Directus"]
-date: "2024"
+stacks: ["Astro", "Tailwind", "Directus"]
+tags: ["Documentation"]
+type: project
+date: "2023"

@@ -3,5 +3,7 @@ description: "Projet réalisé en équipe de six durant la 2ᵉ année de DUT In
 image: "/img/roll20alternative.webp"
 url: "https://github.com/alexisdechiara/Roll20Alternative"
 github: "https://github.com/alexisdechiara/Roll20Alternative"
-tags: ["Laravel", "Bootstrap"]
-date: "2024"
+stacks: ["Laravel", "Bootstrap"]
+tags: ["Jeu"]
+type: demo
+date: "2021"

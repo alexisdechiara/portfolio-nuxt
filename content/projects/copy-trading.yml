@@ -2,6 +2,9 @@ title: Copy trading
 description: "Il s'agit d'une mission réalisée pour un client et ayant durée sur plusieurs mois. Toute la partie front-end à entièrement était fait par moi avec en premier lieu une maquette puis le développement avec Nuxt ainsi que les bibliothèques Reka UI et Tailwind CSS."
 image: "/img/copy-trading.webp"
 url: "https://copy.trading"
-tags: ["Nuxt", "Tailwind", "Reka UI"]
+stacks: ["Nuxt", "Tailwind", "Reka UI"]
+tags: ["Web3", "SaaS"]
+type: project
 date: "2024"
 featured: true
+available: true

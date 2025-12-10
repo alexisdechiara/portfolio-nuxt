@@ -1,0 +1,9 @@
+title: Portfolio v1
+description: "Première version de mon portfolio, réalisé sans framework. C'est une première version assez rudimentaire que j'ai réalisée après mon DUT."
+image: "/img/about-me.avif"
+url: "https://github.com/alexisdechiara/about-me"
+github: "https://github.com/alexisdechiara/about-me"
+stacks: ["HTML", "SCSS", "Typescript", "Bootstrap"]
+tags: ["Site vitrine"]
+type: project
+date: "2021"

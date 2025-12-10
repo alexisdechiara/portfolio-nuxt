@@ -3,6 +3,9 @@ description: "Site web permettant de réalisé une évaluation du score d'un am�
 image: "/img/cyclo-score.avif"
 url: "https://cyclo-score.vercel.app"
 github: "https://github.com/alexisdechiara/cyclo-score"
-tags: ["Nuxt", "Nuxt UI"]
+stacks: ["Nuxt", "Nuxt UI"]
+tags: ["Communautaire", "Documentation"]
+type: project
 date: "2025"
 featured: true
+available: true

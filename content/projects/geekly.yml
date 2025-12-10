@@ -1,8 +1,11 @@
 title: GEEKLY
-description: "Projet réalisé en fusionnant deux thèmes existants, le site utilise le CMS Ghost et est hébergé sur un serveur Hostinger"
+description: "Mon blog réalisé en fusionnant deux thèmes existants, le site utilise le CMS Ghost et est hébergé sur un serveur Hostinger"
 image: "/img/geekly.webp"
 url: "https://geekly.blog"
 github: "https://github.com/alexisdechiara/attibling"
-tags: ["Ghost", "Handlebars"]
+stacks: ["Ghost", "Handlebars"]
+tags: ["Blog"]
+type: project
 date: "2022"
 featured: true
+available: true

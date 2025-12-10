@@ -3,5 +3,7 @@ description: "Projet réalisé en licence pro APIDAE avec l'aide d'un designer p
 image: "/img/cookandchief.webp"
 url: "https://github.com/alexisdechiara/cookandchief"
 github: "https://github.com/alexisdechiara/cookandchief"
-tags: ["Vue", "Tailwind"]
-date: "2024"
+stacks: ["Vue", "Tailwind"]
+tags: ["Recettes"]
+type: demo
+date: "2022"

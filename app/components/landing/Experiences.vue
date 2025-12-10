@@ -40,56 +40,64 @@ const value = ref(items.value);
       :indicator-motion="{ damping: 10, restDelta: 0.001 }"
     >
       <template v-for="(experience, index) in page.experiences.items" :key="index">
-        <UChangelogVersion
-          v-if="value.includes(experience.tag)"
-          :ui="{ container: 'max-w-md' }"
-          :badge="experience.tag"
-          v-bind="experience"
+        <Motion
+          v-show="value.includes(experience.tag)"
+          hydrate-on-visible
+          :initial="{ opacity: 0, transform: 'translateY(10px)' }"
+          :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
+          :transition="{ duration: 0.4, delay: 0.2 * index }"
+          :in-view-options="{ once: true }"
         >
-          <template #title>
-            <div class="flex flex-col">
-              <div class="flex items-center justify-between w-full">
-                {{ experience.title }}
-                <div class="flex items-center gap-2">
-                  <UTooltip
-                    v-for="stack in experience.stacks"
-                    :key="stack.name"
-                    :text="stack.name"
-                    :content="{
-                      side: 'top',
+          <UChangelogVersion
+            :ui="{ container: 'max-w-md' }"
+            :badge="experience.tag"
+            v-bind="experience"
+          >
+            <template #title>
+              <div class="flex flex-col">
+                <div class="flex items-center justify-between w-full">
+                  {{ experience.title }}
+                  <div class="flex items-center gap-2">
+                    <UTooltip
+                      v-for="stack in experience.stacks"
+                      :key="stack.name"
+                      :text="stack.name"
+                      :content="{
+                        side: 'top',
+                      }"
+                    >
+                      <UIcon
+                        v-if="stack.icon"
+                        :name="stack.icon"
+                        class="hover:scale-110 transition-all size-5 hover:text-(--hover-color)"
+                        :style="{ '--hover-color': stack.color }"
+                      />
+                    </UTooltip>
+                  </div>
+                </div>
+                <div class="inline-flex gap-3">
+                  <UButton
+                    v-if="experience.links"
+                    v-for="link in experience.links"
+                    :key="link.label"
+                    :label="link.label"
+                    :to="link.to"
+                    target="_blank"
+                    variant="link"
+                    color="neutral"
+                    size="xs"
+                    trailing-icon="i-lucide-external-link"
+                    :delay-duration="0"
+                    :ui="{
+                      base: 'px-0',
+                      trailingIcon: 'size-3',
                     }"
-                  >
-                    <UIcon
-                      v-if="stack.icon"
-                      :name="stack.icon"
-                      class="hover:scale-110 transition-all size-5 hover:text-(--hover-color)"
-                      :style="{ '--hover-color': stack.color }"
-                    />
-                  </UTooltip>
+                  />
                 </div>
               </div>
-              <div class="inline-flex gap-3">
-                <UButton
-                  v-if="experience.links"
-                  v-for="link in experience.links"
-                  :key="link.label"
-                  :label="link.label"
-                  :to="link.to"
-                  target="_blank"
-                  variant="link"
-                  color="neutral"
-                  size="xs"
-                  trailing-icon="i-lucide-external-link"
-                  :delay-duration="0"
-                  :ui="{
-                    base: 'px-0',
-                    trailingIcon: 'size-3',
-                  }"
-                />
-              </div>
-            </div>
-          </template>
-        </UChangelogVersion>
+            </template>
+          </UChangelogVersion>
+        </Motion>
       </template>
     </UChangelogVersions>
   </UPageSection>

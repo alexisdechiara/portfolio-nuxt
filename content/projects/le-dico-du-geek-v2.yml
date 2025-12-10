@@ -3,5 +3,8 @@ description: "Deuxième version de mon site, celui-ci se base sur Starlight, un 
 image: "/img/ledicodugeek.webp"
 url: "https://github.com/alexisdechiara/dico-du-geek-v2"
 github: "https://github.com/alexisdechiara/dico-du-geek-v2"
-tags: ["Astro", "Tailwind"]
-date: "2024"
+stacks: ["Astro", "Tailwind"]
+tags: ["Documentation"]
+type: project
+date: "2025"
+available: true

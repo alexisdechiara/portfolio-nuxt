@@ -3,5 +3,8 @@ description: "Réalisé avec Nuxt 3, Nuxt UI, Tiptap et Unovis. Il s'agit d'un p
 image: "/img/bento-studio-homepage.webp"
 url: "https://bento-studio.vercel.app"
 github: "https://github.com/alexisdechiara/bento"
-tags: ["Nuxt", "Tailwind"]
+stacks: ["Nuxt", "Nuxt UI"]
+tags: ["SaaS"]
+type: demo
 date: "2024"
+available: true

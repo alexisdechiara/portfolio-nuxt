@@ -3,5 +3,8 @@ description: "Projet personnel réalisé afin d'apprendre à utiliser le CMS Web
 image: "/img/lesvictoiresdelamusique.webp"
 url: "https://lesvictoiresdelamusique.webflow.io/"
 github: ""
-tags: ["Webflow"]
+stacks: ["Webflow"]
+tags: ["Landing Page"]
+type: demo
 date: "2023"
+available: true
