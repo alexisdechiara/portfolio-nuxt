@@ -1,9 +1,10 @@
 title: Le dico du geek v2
 description: "Deuxième version de mon site, celui-ci se base sur Starlight, un template d'Astro permettant la création de documentation que j'ai par la suite modifiée pour qu'il soit adapté à mon utilisation."
-image: "/img/ledicodugeek.webp"
-url: "https://github.com/alexisdechiara/dico-du-geek-v2"
+image: "/img/ledicodugeek-v2.avif"
+url: "https://ledicodugeek.geekly.blog/"
 github: "https://github.com/alexisdechiara/dico-du-geek-v2"
 stacks: ["Astro", "Tailwind"]
 tags: ["Documentation"]
 type: demo
 date: "2025-01-23"
+available: true

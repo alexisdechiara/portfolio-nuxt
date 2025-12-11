@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Analytics } from "@vercel/analytics/nuxt";
 const colorMode = useColorMode();
 
 const color = computed(() => (colorMode.value === "dark" ? "#020618" : "white"));
@@ -31,5 +32,6 @@ useSeoMeta({
         <NuxtPage />
       </UMain>
     </NuxtLayout>
+    <Analytics />
   </UApp>
 </template>

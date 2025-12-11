@@ -1,11 +1,9 @@
 title: Le dico du geek v1
 description: "Regroupant une partie front-end avec Astro et back-end avec Directus hébergé sur mon serveur Hostinger, ce site permet de se renseigner sur les mots de la culture geek, internet et plus encore."
-image: "/img/ledicodugeek.webp"
-url: "https://ledicodugeek.vercel.app/"
+image: "/img/ledicodugeek.avif"
 github: "https://github.com/alexisdechiara/dico-du-geek"
 figma: "https://www.figma.com/design/JrJxKbe6seox6qQni8bcIG/Le-dico-du-geek?m=auto&t=J24VKR6qwWgPn504-1"
 stacks: ["Astro", "Tailwind", "Directus"]
 tags: ["Documentation"]
 type: project
 date: "2023-09-20"
-available: true

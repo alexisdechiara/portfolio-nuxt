@@ -65,7 +65,11 @@ useSeoMeta({
         variant="subtle"
         placeholder="Rechercher un projet…"
         color="neutral"
-        :ui="{ root: 'max-w-xs w-full mx-auto', base: 'rounded-full' }"
+        :ui="{
+          root: 'max-w-xs w-full mx-auto',
+          base: 'rounded-full',
+          trailing: 'pe-0.5',
+        }"
       >
         <template #trailing>
           <USelectMenu
@@ -83,6 +87,7 @@ useSeoMeta({
             :ui="{
               value: 'hidden',
               content: 'min-w-48 max-h-80',
+              trailingIcon: 'cursor-pointer',
             }"
           />
         </template>
