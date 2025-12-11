@@ -42,7 +42,6 @@ const value = ref(items.value);
       <template v-for="(experience, index) in page.experiences.items" :key="index">
         <Motion
           v-show="value.includes(experience.tag)"
-          hydrate-on-visible
           :initial="{ opacity: 0, transform: 'translateY(10px)' }"
           :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
           :transition="{ duration: 0.4, delay: 0.2 * index }"

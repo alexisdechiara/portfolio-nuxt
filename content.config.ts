@@ -77,6 +77,7 @@ export default defineContentConfig({
         description: z.string().nonempty(),
         image: z.string().nonempty().editor({ input: 'media' }),
         github: z.string().nonempty().optional(),
+        figma: z.string().nonempty().optional(),
         url: z.string().nonempty(),
         stacks: z.array(z.string()),
         tags: z.array(z.string()),

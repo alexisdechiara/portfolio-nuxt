@@ -5,6 +5,5 @@ url: "https://github.com/alexisdechiara/dico-du-geek-v2"
 github: "https://github.com/alexisdechiara/dico-du-geek-v2"
 stacks: ["Astro", "Tailwind"]
 tags: ["Documentation"]
-type: project
-date: "2025"
-available: true
+type: demo
+date: "2025-01-23"

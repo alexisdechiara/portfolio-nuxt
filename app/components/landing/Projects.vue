@@ -26,7 +26,6 @@ const { data: projects } = await useAsyncData("projects", () => {
   >
     <Motion
       v-for="(project, index) in projects"
-      hydrate-on-visible
       :key="project.title"
       :initial="{ opacity: 0, transform: 'translateY(10px)' }"
       :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
@@ -37,6 +36,7 @@ const { data: projects } = await useAsyncData("projects", () => {
         :title="project.title"
         :description="project.description"
         :to="project.url"
+        target="_blank"
         orientation="horizontal"
         variant="naked"
         :reverse="index % 2 === 1"
@@ -52,22 +52,22 @@ const { data: projects } = await useAsyncData("projects", () => {
         </template>
         <template #footer>
           <div class="inline-flex gap-1 items-center">
-            <NuxtLink
-              v-if="project.github"
-              :to="project.github"
-              class="group/github leading-0 p-1 rounded-full z-50 transition-all text-default hover:scale-125 hover:animate-wiggle"
-            >
-              <div class="size-4 relative">
-                <UIcon
-                  name="i-mingcute-github-line"
-                  class="absolute inset-0 opacity-100 group-hover/github:opacity-0"
-                />
-                <UIcon
-                  name="i-mingcute-github-fill"
-                  class="absolute inset-0 opacity-0 group-hover/github:opacity-100"
-                />
-              </div>
-            </NuxtLink>
+            <div class="inline-flex items-center -space-x-1">
+              <HoverIcon
+                v-if="project.github"
+                icon="i-mingcute-github-line"
+                hovered-icon="i-mingcute-github-fill"
+                :to="project.github"
+                label="Voir sur GitHub"
+              />
+              <HoverIcon
+                v-if="project.figma"
+                icon="i-basil-figma-outline"
+                hovered-icon="i-basil-figma-solid"
+                :to="project.figma"
+                label="Voir sur Figma"
+              />
+            </div>
             <ULink :to="project.url" class="text-sm text-primary flex items-center">
               Voir le projet
               <UIcon

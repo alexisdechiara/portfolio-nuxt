@@ -6,6 +6,6 @@ github: "https://github.com/alexisdechiara/attibling"
 stacks: ["Ghost", "Handlebars"]
 tags: ["Blog"]
 type: project
-date: "2022"
+date: "2022-10-30"
 featured: true
 available: true

@@ -1,0 +1,10 @@
+title: Portfolio v3
+description: "Le site web auquel vous êtes actuellement, j'ai utilisé un template de Nuxt UI auquel j'ai rajouter plusieurs modifications."
+image: "/img/portfolio-v3.webp"
+url: "https://github.com/alexisdechiara/portfolio"
+github: "https://github.com/alexisdechiara/portfolio"
+stacks: ["Nuxt", "Nuxt UI"]
+tags: ["Site vitrine"]
+type: project
+available: true
+date: "2025-12-11"

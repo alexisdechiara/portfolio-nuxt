@@ -8,6 +8,7 @@ useHead({
     { charset: "utf-8" },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
     { key: "theme-color", name: "theme-color", content: color },
+    { name: "robots", content: "noimageindex" },
   ],
   link: [{ rel: "icon", href: "/favicon.ico" }],
   htmlAttrs: {
@@ -16,9 +17,9 @@ useHead({
 });
 
 useSeoMeta({
-  titleTemplate: "%s - Nuxt Portfolio Template",
-  ogImage: "https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png",
-  twitterImage: "https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png",
+  titleTemplate: "%s - Portfolio",
+  ogImage: "/img/portfolio-v3.webp",
+  twitterImage: "/img/portfolio-v3.webp",
   twitterCard: "summary_large_image",
 });
 </script>

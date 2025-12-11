@@ -1,0 +1,10 @@
+title: AniTierList (Legacy)
+description: "Projet permettant de réaliser des tierlist d'animes en utilisant l'API graphql d'Anilist. L'interface est totalement copié de celui-ci pour être en accord."
+image: "/img/anitierlist.webp"
+url: "https://anitierlist.netlify.app/"
+github: "https://github.com/alexisdechiara/AniTierList-legacy"
+stacks: ["Nuxt", "Tailwind"]
+tags: ["SaaS"]
+type: project
+date: "2023-01-28"
+available: true

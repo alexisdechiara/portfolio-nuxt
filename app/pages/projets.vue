@@ -11,9 +11,17 @@ if (!page.value) {
   });
 }
 
-const { data: projects } = await useAsyncData("projects", () => {
-  return queryCollection("projects").order("date", "DESC").all();
-});
+const { data: projects } = await useAsyncData(
+  `projects-${Date.now()}`,
+  () => {
+    return queryCollection("projects").order("date", "DESC").all();
+  },
+  {
+    getCachedData(key: string): undefined {
+      return undefined; // Désactive le cache pour forcer un rafraîchissement
+    },
+  }
+);
 
 const {
   search,
@@ -85,9 +93,10 @@ useSeoMeta({
           v-show="isProjectVisible(project)"
           :key="project.title"
           :description="project.description"
-          :to="project.url"
+          :to="project.url || project.figma || project.github"
+          target="_blank"
           orientation="vertical"
-          variant="ghost"
+          variant="soft"
           class="group"
           :ui="{
             root: 'size-full',
@@ -143,23 +152,22 @@ useSeoMeta({
 
           <template #footer>
             <div class="inline-flex gap-1 items-center">
-              <NuxtLink
-                v-if="project.github"
-                :to="project.github"
-                class="group/github leading-0 p-1 rounded-full z-50 transition-all text-default hover:scale-125 hover:animate-wiggle"
-                target="_blank"
-              >
-                <div class="size-4 relative">
-                  <UIcon
-                    name="i-mingcute-github-line"
-                    class="absolute inset-0 opacity-100 group-hover/github:opacity-0"
-                  />
-                  <UIcon
-                    name="i-mingcute-github-fill"
-                    class="absolute inset-0 opacity-0 group-hover/github:opacity-100"
-                  />
-                </div>
-              </NuxtLink>
+              <div class="inline-flex items-center -space-x-1">
+                <HoverIcon
+                  v-if="project.github"
+                  icon="i-mingcute-github-line"
+                  hovered-icon="i-mingcute-github-fill"
+                  :to="project.github"
+                  label="Voir sur GitHub"
+                />
+                <HoverIcon
+                  v-if="project.figma"
+                  icon="i-basil-figma-outline"
+                  hovered-icon="i-basil-figma-solid"
+                  :to="project.figma"
+                  label="Voir sur Figma"
+                />
+              </div>
               <ULink
                 :to="project.url"
                 class="text-sm text-primary flex items-center"

@@ -1,8 +1,8 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: 'https://github.com/alexisdechiara/portfolio-nuxt/raw/refs/heads/main/public/img/profil.avif',
-      light: 'https://github.com/alexisdechiara/portfolio-nuxt/raw/refs/heads/main/public/img/profil.avif',
+      dark: '/img/profil.avif',
+      light: '/img/profil.avif',
       alt: 'Ma photo de profil'
     },
     meetingLink: 'https://calendly.com/alexisdechiara/rendez-vous',

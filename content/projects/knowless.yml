@@ -3,9 +3,10 @@ description: "Site de quiz similaire à KCulture et utilisant les questions prov
 image: "/img/knowless.webp"
 url: "https://knowless.vercel.app"
 github: "https://github.com/alexisdechiara/knowless"
-stacks: ["Nuxt", "Shadcn"]
+figma: "https://www.figma.com/design/nOfcCyodeWHEiS9Qyp8Hbl/Knowless?m=auto&t=J24VKR6qwWgPn504-1"
+stacks: ["Nuxt", "Shadcn", "Supabase"]
 tags: ["Jeu", "SaaS"]
 type: project
-date: "2025"
+date: "2025-10-01"
 featured: true
 available: true

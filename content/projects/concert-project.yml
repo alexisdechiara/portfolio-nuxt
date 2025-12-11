@@ -6,4 +6,4 @@ github: "https://github.com/alexisdechiara/ConcertProject"
 stacks: ["Symfony", "Twig", "Tailwind"]
 tags: ["Réservation"]
 type: demo
-date: "2022"
+date: "2022-02-06"

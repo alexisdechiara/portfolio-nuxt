@@ -1,0 +1,11 @@
+title: Voxographie
+description: "Le principe de ce site était de permettre aux utilisateurs de rechercher des comédiens de doublages dans une base de données complètes avec supabase, mais il n'a jamais aboutie."
+image: "/img/voxographie.avif"
+url: "https://www.figma.com/design/6qGp1geXD0Vu3zReDENoIB/Voxographie?m=auto&t=yoYc8RNpecQ78uEa-1"
+github: "https://github.com/alexisdechiara/voxographie"
+figma: "https://www.figma.com/design/6qGp1geXD0Vu3zReDENoIB/Voxographie?m=auto&t=yoYc8RNpecQ78uEa-1"
+stacks: ["Nuxt", "Supabase"]
+tags: ["Communautaire", "Documentation"]
+type: project
+date: "2023-03-28"
+available: true

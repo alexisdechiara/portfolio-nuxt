@@ -1,0 +1,11 @@
+title: Copy trading App
+description: "Il s'agit d'une mission réalisée pour un client et ayant durée sur plusieurs mois. Toute la partie front-end à entièrement était fait par moi avec en premier lieu une maquette puis le développement avec Nuxt ainsi que les bibliothèques Reka UI et Tailwind CSS. Malheureusement, le client a abandonné le projet."
+image: "/img/copy-trading-app.webp"
+url: "https://app.copy.trading"
+figma: "https://www.figma.com/design/OGQvd7Pn5k46WOXsyniZU8/%E2%9D%96-Copy-Trading-UI?m=auto&t=J24VKR6qwWgPn504-1"
+stacks: ["Nuxt", "Tailwind", "Reka UI"]
+tags: ["Web3", "SaaS"]
+type: project
+date: "2024-11-31"
+featured: true
+available: true
