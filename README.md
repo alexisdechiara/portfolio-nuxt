@@ -1,62 +1,91 @@
-# Nuxt Portfolio Template
+# Portfolio Nuxt
 
-[![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
+Ce projet est mon portfolio personnel, une application web moderne et performante conçue pour présenter mes compétences, mes projets et mes articles de blog. Il est construit sur la base du template **[Nuxt UI Portfolio](https://ui.nuxt.com/templates/portfolio)** et personnalisé pour répondre à mes besoins.
 
-Use this template to create your own portfolio with [Nuxt UI](https://ui.nuxt.com).
+## ✨ Fonctionnalités Clés
 
-- [Live demo](https://portfolio-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/getting-started/installation)
+- 📝 **Blog Intégré** : Gestion d'articles techniques et personnels via Nuxt Content.
+- 📁 **Showcase de Projets** : Une section dédiée pour présenter mes réalisations avec détails et liens.
+- 🎨 **Design Premium** : Interface soignée, minimaliste et responsive utilisant Nuxt UI.
+- 🌗 **Mode Sombre/Clair** : Support natif et automatique pour un confort visuel optimal.
+- ✨ **Animations Fluides** : Expérience utilisateur enrichie grâce à `motion-v`.
+- 🔍 **SEO Optimisé** : Bonnes pratiques SEO intégrées nativement avec Nuxt SEO.
 
-<a href="https://portfolio-template.nuxt.dev/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ui.nuxt.com/assets/templates/nuxt/portfolio-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png">
-    <img alt="Nuxt Portfolio Template" src="https://ui.nuxt.com/assets/templates/nuxt/portfolio-dark.png">
-  </picture>
-</a>
+## 🛠️ Stack Technique
 
-## Quick Start
+Ce projet tire parti des dernières technologies de l'écosystème Vue et Nuxt :
 
-```bash [Terminal]
-npm create nuxt@latest -- -t github:nuxt-ui-templates/portfolio
-```
+- 🏗️ **Framework** : [Nuxt 4](https://nuxt.com/) pour une architecture solide et performante.
+- 🎨 **UI & Styling** : [Nuxt UI](https://ui.nuxt.com/) (basé sur Tailwind CSS) pour le système de design.
+- 📝 **Contenu** : [Nuxt Content](https://content.nuxt.com/) pour la gestion du blog et des données en Markdown.
+- 🖼️ **Images** : [Nuxt Image](https://image.nuxt.com/) pour l'optimisation automatique des médias.
+- 🎭 **Animations** : [Motion One (Vue)](https://motion.dev/) pour les animations d'interface.
+- 🤖 **IA** : [Nuxt LLMs](https://github.com/hrcd-agency/nuxt-llms) pour l'intégration de fonctionnalités liées aux LLM.
+- ✨ **Icônes** : [Nuxt Icon](https://nuxt.com/modules/icon) avec `lucide` et `simple-icons`.
 
-## Deploy your own
+## 📂 Structure du Projet
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-name=portfolio&repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Fportfolio&demo-image=https%3A%2F%2Fui.nuxt.com%2Fassets%2Ftemplates%2Fnuxt%2Fportfolio-dark.png&demo-url=https%3A%2F%2Fportfolio-template.nuxt.dev%2F&demo-title=Nuxt%20Portfolio%20Template&demo-description=A%20sleek%20portfolio%20template%20to%20showcase%20your%20work%2C%20skills%20and%20blog%20powered%20by%20Nuxt%20Content.)
-
-## Setup
-
-Make sure to install the dependencies:
+Voici un aperçu de l'organisation des fichiers :
 
 ```bash
-pnpm install
+portfolio-nuxt/
+├── app/
+│   ├── components/      # Composants Vue réutilisables
+│   ├── composables/     # Logique partagée (hooks)
+│   ├── layouts/         # Mises en page globales
+│   ├── pages/           # Routes de l'application (blog, projets, etc.)
+│   ├── app.config.ts    # Configuration de l'interface
+│   └── app.vue          # Point d'entrée de l'application
+├── content/             # Fichiers Markdown (articles de blog, données projets)
+├── public/              # Fichiers statiques
+├── server/              # API et routes serveur
+├── nuxt.config.ts       # Configuration principale de Nuxt
+└── package.json         # Dépendances et scripts
 ```
 
-## Development Server
+## 🚀 Installation et Démarrage
 
-Start the development server on `http://localhost:3000`:
+Ce projet utilise **Bun** comme gestionnaire de paquets principal.
+
+### 1. Cloner le dépôt
 
 ```bash
-pnpm dev
+git clone https://github.com/alexisdechiara/portfolio-nuxt.git
+cd portfolio-nuxt
 ```
 
-## Production
-
-Build the application for production:
+### 2. Installer les dépendances
 
 ```bash
-pnpm build
+bun install
 ```
 
-Locally preview production build:
+### 3. Lancer le serveur de développement
 
 ```bash
-pnpm preview
+bun dev
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+L'application sera accessible à l'adresse : `http://localhost:3000`
 
-## Renovate integration
+## 📦 Build pour la Production
 
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
+Pour créer une version optimisée pour la production :
+
+```bash
+bun run build
+```
+
+Vous pouvez ensuite prévisualiser le build localement avec :
+
+```bash
+bun run preview
+```
+
+## 📱 Contact
+
+Vous pouvez me retrouver sur [GitHub](https://github.com/alexisdechiara) ou visiter [mon site web](https://alexisdechiara.fr).
+
+## 🧾 Licences
+
+Ce projet ne possède pas de licence. N'hésitez pas à vous en inspirer, voire à le forker pour votre propre portfolio !
