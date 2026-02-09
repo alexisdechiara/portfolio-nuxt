@@ -3,11 +3,14 @@ export async function useRss(url: string) {
     params: { url },
     transform: (data) => {
       return data.rss.channel[0]
-    }
+    },
+    key: `rss-${url}`,
+    server: true,
+    default: () => null
   })
 
   const posts = computed(() => {
-    return data.value.item
+    return data.value?.item || []
   })
 
   return { data, pending, error, posts }

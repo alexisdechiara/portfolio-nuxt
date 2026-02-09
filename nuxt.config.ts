@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     'nuxt-og-image',
     'motion-v/nuxt',
     '@nuxtjs/seo',
-    'nuxt-llms'
+    'nuxt-llms',
+    'nuxt-studio'
   ],
 
   devtools: {
@@ -26,6 +27,13 @@ export default defineNuxtConfig({
         '/'
       ],
       crawlLinks: true
+    },
+    routeRules: {
+      '/api/rss': {
+        cache: {
+          maxAge: 300 // 5 minutes de cache
+        }
+      }
     }
   },
 
@@ -119,5 +127,9 @@ export default defineNuxtConfig({
         disallow: '/'
       }
     ]
+  },
+
+  studio: {
+    route: '/admin'
   }
 })

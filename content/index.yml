@@ -1,230 +1,231 @@
-seo:
-  title: "Alexis De Chiara"
-  description: "Développeur front-end & UX/UI Designer"
-title: "Alexis De Chiara"
-description: "Je suis **front-end developer** & **UX/UI Designer**, spécialisé dans la création d'applications web en utilisant des technologies modernes et performantes mais aussi dans la création de maquettes responsive et accessibles"
+title: Alexis De Chiara
+about:
+  title: About Me
+  description: |
+    As a UX/UI designer and front-end developer with 6 years of experience, I leverage my Boston University Interactive Design degree to craft user-centered digital experiences.
+    My approach blends creative strategy with technical expertise, transforming concepts into functional, purposeful digital products that seamlessly integrate design and technology.
+description: Je suis **front-end developer** & **UX/UI Designer**, spécialisé dans la création d'applications web en utilisant des technologies modernes et performantes mais aussi dans la création de maquettes responsive et accessibles
+experience:
+  title: Work Experience
+  items:
+    - position: Brand Designer at
+      date: 2023 - Present
+      company:
+        name: Nuxt
+        logo: i-simple-icons-nuxtdotjs
+        url: https://nuxt.com
+        color: "#00DC82"
+    - position: Assets Designer at
+      date: 2022 - 2023
+      company:
+        name: Raycast
+        logo: i-simple-icons-raycast
+        url: https://raycast.com
+        color: "#FF6363"
+    - position: Senior UX/UI Designer at
+      date: 2020 - 2021
+      company:
+        name: Linear
+        logo: i-simple-icons-linear
+        url: https://linear.app
+        color: "#5E6AD2"
+experiences:
+  title: Mes expériences
+  description: L'ensemble de mes expériences professionnelles
+  items:
+    - tag: Freelance
+      date: 2024-011-01
+      title: Développeur Front-end
+      description: Mission réalisée pour un client et ayant durée sur plusieurs mois. Toute la partie front-end à entièrement était fait par moi avec en premier lieu une maquette puis le développement avec Nuxt ainsi que les bibliothèques Reka UI et Tailwind CSS.
+      stacks:
+        - name: Nuxt
+          icon: i-simple-icons-nuxt
+          color: "#00DC82"
+        - name: Reka UI
+          icon: i-simple-icons-rekaui
+          color: "#42B883"
+        - name: Tailwind CSS
+          icon: i-simple-icons-tailwindcss
+          color: "#06B6D4"
+      links:
+        - label: Copy Trading
+          to: https://copy.trading/
+    - tag: Alternance
+      date: 2022-08-01
+      title: Développeur Fullstack
+      description: Alternance avec l'entreprise Orange Business Services dans laquelle j'ai refactoré et d'amélioré l'interface d'un site interne dédié à la gestion de la facturation des clients. Par la suite, j'ai entrepris la création de certains microservices visant à rendre le backend plus flexible.
+      stacks:
+        - name: Vue
+          icon: i-simple-icons-vuedotjs
+          color: "#42B883"
+        - name: Bootstrap
+          icon: i-simple-icons-bootstrap
+          color: "#7952B3"
+        - name: C#
+          icon: i-simple-icons-csharp
+          color: "#612678"
+        - name: .NET
+          icon: i-simple-icons-dotnet
+          color: "#512BD4"
+      links:
+        - label: Orange Business Services
+          to: https://orange.com
+    - tag: Études
+      date: 2022-08-01
+      title: Licence pro APIDAE
+      description: Cours visant à approfondir mes études en informatique, avec une orientation spécifique vers le domaine du web. Ce programme mettait l'accent sur la base de données, la conception d'architecture web, ainsi que l'utilisation de frameworks JavaScript et PHP. Mon objectif était de décrocher le diplôme d'Assistant de Projet Informatique, Développement d'Applications E-business.
+      stacks:
+        - name: Vue
+          icon: i-simple-icons-vuedotjs
+          color: "#42B883"
+        - name: PHP
+          icon: i-simple-icons-php
+          color: "#7952B3"
+        - name: JavaScript
+          icon: i-simple-icons-javascript
+          color: "#edd93a"
+        - name: SQL
+          icon: i-simple-icons-postgresql
+          color: "#4169E1"
+        - name: Symfony
+          icon: i-simple-icons-symfony
+          color: "#000000"
+      links:
+        - label: IUT Montpellier-Sète
+          to: https://iut-montpellier-sete.edu.umontpellier.fr/
+        - label: Formation
+          to: https://iut-montpellier-sete.edu.umontpellier.fr/files/2020/01/Fiche-de-formation-LP-APIDAE_R_V_2020.pdf
+    - tag: Stage
+      date: 2021-08-01
+      title: Développeur Fullstack
+      description: Utilisations de spring avec Java et angular sur une application de gestion des clients sensibles en interne
+      stacks:
+        - name: Java
+          icon: i-ri-java-fill
+          color: "#FF6363"
+        - name: Angular
+          icon: i-simple-icons-angular
+          color: "#FF6363"
+      links:
+        - label: UBS
+          to: https://ubs.com
+    - tag: Études
+      date: 2019-09-01
+      title: DUT Informatique
+      description: Formation initiale permettant d'acquérir des compétences dans un ensemble diversifié de langages de programmation, tout en apprenant les bonnes pratiques et les concepts logiques fondamentaux.
+      stacks:
+        - name: Java
+          icon: i-ri-java-fill
+          color: "#FF6363"
+        - name: SQL
+          icon: i-simple-icons-postgresql
+          color: "#4169E1"
+        - name: JavaScript
+          icon: i-simple-icons-javascript
+          color: "#edd93a"
+        - name: Angular
+          icon: i-simple-icons-angular
+          color: "#FF6363"
+      links:
+        - label: IUT Nice Côte D’azur
+          to: https://iutcotedazur.unice.fr/
 hero:
   links:
-    - label: "Me contacter"
+    - label: Me contacter
       to: mailto:pro@alexisdechiara.fr
-      color: "neutral"
-    - label: "Prendre rendez-vous"
+      color: neutral
+    - label: Prendre rendez-vous
       to: https://calendly.com/alexisdechiara/rendez-vous
-      variant: "ghost"
-      color: "neutral"
+      variant: ghost
+      color: neutral
+  images: []
 marquees:
   - stacks:
       - title: Nuxt
-        description: "Meta-framework de Vue.js pour des applications web performantes et SEO-friendly"
+        description: Meta-framework de Vue.js pour des applications web performantes et SEO-friendly
         icon: i-simple-icons-nuxt
         color: "#00DC82"
       - title: Vue
-        description: "Framework JavaScript progressif pour construire des interfaces utilisateur"
+        description: Framework JavaScript progressif pour construire des interfaces utilisateur
         icon: i-simple-icons-vuedotjs
         color: "#42B883"
       - title: Astro
-        description: "Framework web moderne permettant d'utiliser plusieurs frameworks"
+        description: Framework web moderne permettant d'utiliser plusieurs frameworks
         icon: i-logos-astro-icon
         color: "#BC52EE"
       - title: Typescript
-        description: "Langage de programmation fortement typé s'appuyant sur JavaScript"
+        description: Langage de programmation fortement typé s'appuyant sur JavaScript
         icon: i-simple-icons-typescript
         color: "#3178C6"
       - title: Tailwind CSS
-        description: "Framework CSS utilitaire pour des designs personnalisés et réactifs"
+        description: Framework CSS utilitaire pour des designs personnalisés et réactifs
         icon: i-simple-icons-tailwindcss
         color: "#06B6D4"
   - stacks:
       - title: Laravel
-        description: "Framework PHP élégant pour le développement d'applications web complètes"
+        description: Framework PHP élégant pour le développement d'applications web complètes
         icon: i-simple-icons-laravel
         color: "#FF6363"
       - title: Symfony
-        description: "Framework PHP robuste pour des applications web complexes et évolutives"
+        description: Framework PHP robuste pour des applications web complexes et évolutives
         icon: i-simple-icons-symfony
         color: "#000000"
       - title: Supabase
-        description: "Alternative open source à Firebase avec base de données temps réel et authentification"
+        description: Alternative open source à Firebase avec base de données temps réel et authentification
         icon: i-simple-icons-supabase
         color: "#3FCF8E"
       - title: SQL
-        description: "Langage de requête pour gérer et interroger des bases de données relationnelles"
+        description: Langage de requête pour gérer et interroger des bases de données relationnelles
         icon: i-devicon-postgresql
         color: "#4169E1"
       - title: Java
-        description: "Langage de programmation orienté objet pour des applications d'entreprise"
+        description: Langage de programmation orienté objet pour des applications d'entreprise
         icon: i-ri-java-fill
         color: "#FF6363"
   - stacks:
       - title: Figma
-        description: "Outil de conception d'interface et prototypage collaboratif en ligne"
+        description: Outil de conception d'interface et prototypage collaboratif en ligne
         icon: i-devicon-figma
         color: "#000000"
       - title: DaVinci Resolve
-        description: "Solution complète de montage vidéo et d'étalonnage couleur professionnel"
+        description: Solution complète de montage vidéo et d'étalonnage couleur professionnel
         icon: i-simple-icons-davinciresolve
       - title: Affinity
-        description: "Logiciel de retouche et de création graphique gratuite et tout-en-un"
+        description: Logiciel de retouche et de création graphique gratuite et tout-en-un
         icon: i-local-affinity
         color: "#000000"
       - title: Photoshop
-        description: "Logiciel de retouche et de création graphique professionnelle"
+        description: Logiciel de retouche et de création graphique professionnelle
         icon: i-devicon-photoshop
         color: "#000000"
-experiences:
-  title: Mes expériences
-  description: "L'ensemble de mes expériences professionnelles"
-  items:
-    - tag: "Freelance"
-      date: "2024-011-01"
-      title: "Développeur Front-end"
-      description: "Mission réalisée pour un client et ayant durée sur plusieurs mois. Toute la partie front-end à entièrement était fait par moi avec en premier lieu une maquette puis le développement avec Nuxt ainsi que les bibliothèques Reka UI et Tailwind CSS."
-      stacks:
-        - name: "Nuxt"
-          icon: "i-simple-icons-nuxt"
-          color: "#00DC82"
-        - name: "Reka UI"
-          icon: "i-simple-icons-rekaui"
-          color: "#42B883"
-        - name: "Tailwind CSS"
-          icon: "i-simple-icons-tailwindcss"
-          color: "#06B6D4"
-      links:
-        - label: Copy Trading
-          to: "https://copy.trading/"
-    - tag: "Alternance"
-      date: "2022-08-01"
-      title: "Développeur Fullstack"
-      description: "Alternance avec l'entreprise Orange Business Services dans laquelle j'ai refactoré et d'amélioré l'interface d'un site interne dédié à la gestion de la facturation des clients. Par la suite, j'ai entrepris la création de certains microservices visant à rendre le backend plus flexible."
-      stacks:
-        - name: "Vue"
-          icon: "i-simple-icons-vuedotjs"
-          color: "#42B883"
-        - name: "Bootstrap"
-          icon: "i-simple-icons-bootstrap"
-          color: "#7952B3"
-        - name: "C#"
-          icon: "i-simple-icons-csharp"
-          color: "#612678"
-        - name: ".NET"
-          icon: "i-simple-icons-dotnet"
-          color: "#512BD4"
-      links:
-        - label: Orange Business Services
-          to: "https://orange.com"
-    - tag: "Études"
-      date: "2022-08-01"
-      title: "Licence pro APIDAE"
-      description: "Cours visant à approfondir mes études en informatique, avec une orientation spécifique vers le domaine du web. Ce programme mettait l'accent sur la base de données, la conception d'architecture web, ainsi que l'utilisation de frameworks JavaScript et PHP. Mon objectif était de décrocher le diplôme d'Assistant de Projet Informatique, Développement d'Applications E-business."
-      stacks:
-        - name: "Vue"
-          icon: "i-simple-icons-vuedotjs"
-          color: "#42B883"
-        - name: "PHP"
-          icon: "i-simple-icons-php"
-          color: "#7952B3"
-        - name: "JavaScript"
-          icon: "i-simple-icons-javascript"
-          color: "#edd93a"
-        - name: "SQL"
-          icon: "i-simple-icons-postgresql"
-          color: "#4169E1"
-        - name: "Symfony"
-          icon: "i-simple-icons-symfony"
-          color: "#000000"
-      links:
-        - label: IUT Montpellier-Sète
-          to: "https://iut-montpellier-sete.edu.umontpellier.fr/"
-        - label: Formation
-          to: "https://iut-montpellier-sete.edu.umontpellier.fr/files/2020/01/Fiche-de-formation-LP-APIDAE_R_V_2020.pdf"
-    - tag: "Stage"
-      date: "2021-08-01"
-      title: "Développeur Fullstack"
-      description: "Utilisations de spring avec Java et angular sur une application de gestion des clients sensibles en interne"
-      stacks:
-        - name: "Java"
-          icon: "i-ri-java-fill"
-          color: "#FF6363"
-        - name: "Angular"
-          icon: "i-simple-icons-angular"
-          color: "#FF6363"
-      links:
-        - label: UBS
-          to: "https://ubs.com"
-    - tag: "Études"
-      date: "2019-09-01"
-      title: "DUT Informatique"
-      description: "Formation initiale permettant d'acquérir des compétences dans un ensemble diversifié de langages de programmation, tout en apprenant les bonnes pratiques et les concepts logiques fondamentaux."
-      stacks:
-        - name: "Java"
-          icon: "i-ri-java-fill"
-          color: "#FF6363"
-        - name: "SQL"
-          icon: "i-simple-icons-postgresql"
-          color: "#4169E1"
-        - name: "JavaScript"
-          icon: "i-simple-icons-javascript"
-          color: "#edd93a"
-        - name: "Angular"
-          icon: "i-simple-icons-angular"
-          color: "#FF6363"
-      links:
-        - label: "IUT Nice Côte D’azur"
-          to: "https://iutcotedazur.unice.fr/"
-about:
-  title: "About Me"
-  description: |
-    As a UX/UI designer and front-end developer with 6 years of experience, I leverage my Boston University Interactive Design degree to craft user-centered digital experiences.
-    My approach blends creative strategy with technical expertise, transforming concepts into functional, purposeful digital products that seamlessly integrate design and technology.
-experience:
-  title: Work Experience
-  items:
-    - position: "Brand Designer at"
-      date: "2023 - Present"
-      company:
-        name: Nuxt
-        logo: "i-simple-icons-nuxtdotjs"
-        url: "https://nuxt.com"
-        color: "#00DC82"
-    - position: "Assets Designer at"
-      date: "2022 - 2023"
-      company:
-        name: Raycast
-        logo: "i-simple-icons-raycast"
-        url: "https://raycast.com"
-        color: "#FF6363"
-    - position: "Senior UX/UI Designer at"
-      date: "2020 - 2021"
-      company:
-        name: Linear
-        logo: "i-simple-icons-linear"
-        url: "https://linear.app"
-        color: "#5E6AD2"
-testimonials:
-  - quote: "Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics."
-    author:
-      name: 'Sarah Chen'
-      description: 'Product Director at Bloom Finance'
-      avatar:
-        src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Working with Emma was the best decision we made for our startup. She didn't just deliver designs—she challenged our assumptions, conducted thorough user research, and created an experience that truly resonated with our audience. Her technical knowledge of front-end development meant the handoff to our engineering team was seamless."
-    author:
-      name: 'Michael Rodriguez'
-      description: 'Co-founder of Wavelength Music'
-      avatar:
-        src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Emma stands out in her ability to translate complex sustainability data into intuitive interfaces. Her work on EcoTrack wasn't just visually stunning—it fundamentally changed how our users interact with environmental information. She approaches each problem with both creativity and analytical rigor, which is exactly what we needed."
-    author:
-      name: 'Dr. Aisha Johnson'
-      description: 'Chief Innovation Officer at GreenTech Solutions'
-      avatar:
-        src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
 projects:
-  title: "Projets réalisés"
-  description: "Voici quelques un de mes projets mis en avant"
+  title: Projets réalisés
+  description: Voici quelques un de mes projets mis en avant
+seo:
+  title: Alexis De Chiara
+  description: Développeur front-end & UX/UI Designer
+testimonials:
+  - quote: Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics.
+    author:
+      name: Sarah Chen
+      description: Product Director at Bloom Finance
+      avatar:
+        src: https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80
+        srcset: https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x
+  - quote: Working with Emma was the best decision we made for our startup. She didn't just deliver designs—she challenged our assumptions, conducted thorough user research, and created an experience that truly resonated with our audience. Her technical knowledge of front-end development meant the handoff to our engineering team was seamless.
+    author:
+      name: Michael Rodriguez
+      description: Co-founder of Wavelength Music
+      avatar:
+        src: https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80
+        srcset: https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x
+  - quote: Emma stands out in her ability to translate complex sustainability data into intuitive interfaces. Her work on EcoTrack wasn't just visually stunning—it fundamentally changed how our users interact with environmental information. She approaches each problem with both creativity and analytical rigor, which is exactly what we needed.
+    author:
+      name: Dr. Aisha Johnson
+      description: Chief Innovation Officer at GreenTech Solutions
+      avatar:
+        src: https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80
+        srcset: https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x
 faq:
   title: Frequently Asked Questions
   description: Answers to common questions about my process and services.
