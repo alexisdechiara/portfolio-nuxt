@@ -1,8 +1,12 @@
 # syntax=docker/dockerfile:1
 
 # ---- Build ----
-FROM oven/bun:1.3 AS build
+# Image Node (et non oven/bun) : le build doit tourner sous Node pour que
+# Nuxt Content choisisse le pilote better-sqlite3 et non bun:sqlite.
+FROM node:22-slim AS build
 WORKDIR /app
+
+RUN npm install -g bun@1.3.4
 
 # Outils natifs pour better-sqlite3 (au cas où aucun binaire précompilé ne correspond)
 RUN apt-get update \
