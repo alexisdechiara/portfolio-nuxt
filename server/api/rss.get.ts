@@ -16,6 +16,7 @@ export default defineEventHandler(async (event) => {
 
   const xml = await ofetch(url, {
     responseType: 'text',
+    timeout: 8000,
     headers: {
       'User-Agent': 'alexisdechiara.fr RSS Reader (+https://alexisdechiara.fr)'
     }

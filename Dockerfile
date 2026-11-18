@@ -9,17 +9,16 @@ RUN apt-get update \
   && apt-get install -y --no-install-recommends python3 make g++ \
   && rm -rf /var/lib/apt/lists/*
 
-COPY package.json bun.lock .npmrc ./
-RUN bun install --frozen-lockfile --ignore-scripts
-
 COPY . .
+# Les scripts d'install sont nécessaires (binaire natif better-sqlite3, nuxt prepare)
+RUN bun install --frozen-lockfile
 
 ARG NUXT_PUBLIC_SITE_URL=https://alexisdechiara.fr
 ENV NUXT_PUBLIC_SITE_URL=${NUXT_PUBLIC_SITE_URL} \
     NITRO_PRESET=node-server \
     NODE_OPTIONS=--max-old-space-size=4096
 
-RUN bun run postinstall && bun run build
+RUN bun run build
 
 # ---- Runtime ----
 FROM node:22-slim AS runtime

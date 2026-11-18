@@ -16,15 +16,7 @@ if (!page.value) {
   });
 }
 
-const { data, posts, pending } = await useRss("https://geekly.blog/rss");
-
-if (!pending.value && !data.value) {
-  throw createError({
-    statusCode: 404,
-    statusMessage: "blogs posts not found",
-    fatal: true,
-  });
-}
+const { posts } = await useRss("https://geekly.blog/rss");
 
 useSeoMeta({
   title: page.value?.seo?.title || page.value?.title,

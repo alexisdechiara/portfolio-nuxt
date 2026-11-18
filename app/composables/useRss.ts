@@ -5,7 +5,8 @@ export async function useRss(url: string) {
       return data.rss.channel[0]
     },
     key: `rss-${url}`,
-    server: true,
+    // Récupéré côté navigateur : le build/prérendu ne dépend pas de la disponibilité du flux
+    server: false,
     default: () => null
   })
 
